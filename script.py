@@ -8,6 +8,7 @@ cipher_suite = Fernet(key)
 # Access the secret value (temporary for debugging)
 my_secret = os.getenv('MY_SECRET')
 
+print(my_secret)
 # Encrypt the secret value
 encrypted_secret = cipher_suite.encrypt(my_secret.encode())
 
